@@ -15,7 +15,7 @@
 		99FD32AD4E897DEC08100B32D2650B7C /* Pods-GCB_UserCategory_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B4951A49EF61390F349264B0933D86F /* Pods-GCB_UserCategory_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8F8845DC28853FFBF9F9F3E65BF3178 /* GCB_UserCategory-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1F3F9C0320F055C3B44FB7CD4B18A /* GCB_UserCategory-dummy.m */; };
 		CF0E94FEEE4CC24BB802E304D59F8497 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		D32119EB08276D2F36032415F425DBA1 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = CB68CA5CBFFB5937B49BD02CF27CEDC4 /* ReplaceMe.m */; };
+		D32119EB08276D2F36032415F425DBA1 /* NYUserCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CB68CA5CBFFB5937B49BD02CF27CEDC4 /* NYUserCategory.m */; };
 		F4507D8D284066B900764ACC /* CTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = F4507D87284066B900764ACC /* CTMediator.m */; };
 		F4507D8E284066B900764ACC /* CTMediator+ModuleA.h in Headers */ = {isa = PBXBuildFile; fileRef = F4507D88284066B900764ACC /* CTMediator+ModuleA.h */; };
 		F4507D8F284066B900764ACC /* CTMediator+ModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = F4507D89284066B900764ACC /* CTMediator+ModuleA.m */; };
@@ -66,7 +66,7 @@
 		9EB1F3F9C0320F055C3B44FB7CD4B18A /* GCB_UserCategory-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCB_UserCategory-dummy.m"; sourceTree = "<group>"; };
 		AC7D56EF387F996165BC2B97EAF40890 /* Pods-GCB_UserCategory_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GCB_UserCategory_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCCEA13C11E923097CDCF47DA42E010A /* Pods-GCB_UserCategory_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GCB_UserCategory_Example-frameworks.sh"; sourceTree = "<group>"; };
-		CB68CA5CBFFB5937B49BD02CF27CEDC4 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = GCB_UserCategory/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		CB68CA5CBFFB5937B49BD02CF27CEDC4 /* NYUserCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NYUserCategory.m; path = GCB_UserCategory/Classes/NYUserCategory.m; sourceTree = "<group>"; };
 		D3C5286A9A904BCF4B2063B3B88C64E9 /* Pods-GCB_UserCategory_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GCB_UserCategory_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DABB336BBF09A933C4C6FCB15DC20284 /* Pods-GCB_UserCategory_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GCB_UserCategory_Example-Info.plist"; sourceTree = "<group>"; };
 		EE36DEB782FD4AB740A1555A46877975 /* Pods-GCB_UserCategory_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GCB_UserCategory_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -183,8 +183,8 @@
 		6C72841BEDA60962B7ECB73464CDE926 /* GCB_UserCategory */ = {
 			isa = PBXGroup;
 			children = (
-				F4507D86284066AC00764ACC /* Classes */,
-				CB68CA5CBFFB5937B49BD02CF27CEDC4 /* ReplaceMe.m */,
+				F4507D932840BA8300764ACC /* Mediator */,
+				CB68CA5CBFFB5937B49BD02CF27CEDC4 /* NYUserCategory.m */,
 				8202E7DAA38CEDE4AB41F38F3D0C60A3 /* Pod */,
 				B13B71884B5EEEA2B27F4181269CEFEB /* Support Files */,
 			);
@@ -236,7 +236,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F4507D86284066AC00764ACC /* Classes */ = {
+		F4507D932840BA8300764ACC /* Mediator */ = {
 			isa = PBXGroup;
 			children = (
 				F4507D8A284066B900764ACC /* CTMediator.h */,
@@ -246,7 +246,8 @@
 				F4507D8C284066B900764ACC /* MAClass.h */,
 				F4507D8B284066B900764ACC /* MAClass.m */,
 			);
-			path = Classes;
+			name = Mediator;
+			path = GCB_UserCategory/Classes/Mediator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,7 +400,7 @@
 				F4507D8D284066B900764ACC /* CTMediator.m in Sources */,
 				F4507D8F284066B900764ACC /* CTMediator+ModuleA.m in Sources */,
 				C8F8845DC28853FFBF9F9F3E65BF3178 /* GCB_UserCategory-dummy.m in Sources */,
-				D32119EB08276D2F36032415F425DBA1 /* ReplaceMe.m in Sources */,
+				D32119EB08276D2F36032415F425DBA1 /* NYUserCategory.m in Sources */,
 				F4507D91284066B900764ACC /* MAClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
