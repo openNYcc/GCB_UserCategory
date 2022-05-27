@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'GCB_UserCategory_Example' do
+  pod 'GCB_UserCategory', :path => '../'
+
+  target 'GCB_UserCategory_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
