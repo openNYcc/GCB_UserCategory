@@ -1,0 +1,6 @@
+framework module GCB_UserCategory {
+  umbrella header "GCB_UserCategory-umbrella.h"
+
+  export *
+  module * { export * }
+}

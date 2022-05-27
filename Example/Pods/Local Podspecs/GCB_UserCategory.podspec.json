@@ -1,0 +1,22 @@
+{
+  "name": "GCB_UserCategory",
+  "version": "0.1.0",
+  "summary": "A short description of GCB_UserCategory.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/455858242@qq.com/GCB_UserCategory",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "455858242@qq.com": "455858242@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/455858242@qq.com/GCB_UserCategory.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "GCB_UserCategory/Classes/**/*"
+}

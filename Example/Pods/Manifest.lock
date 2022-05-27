@@ -1,0 +1,16 @@
+PODS:
+  - GCB_UserCategory (0.1.0)
+
+DEPENDENCIES:
+  - GCB_UserCategory (from `../`)
+
+EXTERNAL SOURCES:
+  GCB_UserCategory:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GCB_UserCategory: c73977e65e8aca40a420c540a8e79899c03400a7
+
+PODFILE CHECKSUM: 58649a42f99b97f447712f3b1ebd8076a2ea5bc5
+
+COCOAPODS: 1.10.2
